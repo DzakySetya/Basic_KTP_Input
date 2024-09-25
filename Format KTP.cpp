@@ -12,7 +12,7 @@ int main()
     cout << "Masukkan NIK\t\t\t : ";
     getline(cin, nik);
     cout << "" << endl;
-
+    
     cout << "Masukkan Nama\t\t\t : ";
     getline(cin, nama);
     cout << "" << endl;
@@ -117,3 +117,4 @@ int main()
     cout << "" << endl;
 
     cout << "Berlaku Hingga \t\t: SEUMUR HIDUP ";
+}
