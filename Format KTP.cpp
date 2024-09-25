@@ -13,7 +13,7 @@ int main()
     getline(cin, nik);
     cout << "" << endl;
 
-	cout << "Masukkan Nama\t\t\t : ";
+    cout << "Masukkan Nama\t\t\t : ";
     getline(cin, nama);
     cout << "" << endl;
 
