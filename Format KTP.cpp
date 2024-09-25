@@ -75,9 +75,22 @@ int main(){
     cout << "" << endl;
 
     //Proses & Output
-    transform(provinsi.begin(), provinsi.end(), provinsi.begin(),::toupper); //Memperbesar str provinsi
-    transform(kota.begin(), kota.end(), kota.begin(), ::toupper); //Memperbesar str kota
-
+    
+    //Memperbesar String
+    transform(provinsi.begin(), provinsi.end(), provinsi.begin(), ::toupper); 
+    transform(kota.begin(), kota.end(), kota.begin(), ::toupper); 
+    transform(nama.begin(), nama.end(), nama.begin(), ::toupper);
+    transform(tempat_tanggal.begin(), tempat_tanggal.end(), tempat_tanggal.begin(), ::toupper);
+    transform(jenis_kelamin.begin(), jenis_kelamin.end(), jenis_kelamin.begin(), ::toupper);
+    transform(gol_darah.begin(), gol_darah.end(), gol_darah.begin(), ::toupper);
+    transform(alamat.begin(), alamat.end(), alamat.begin(), ::toupper);
+    transform(kelurahan.begin(), kelurahan.end(), kelurahan.begin(), ::toupper);
+    transform(kecamatan.begin(), kecamatan.end(), kecamatan.begin(), ::toupper);
+    transform(agama.begin(), agama.end(), agama.begin(), ::toupper);
+    transform(status.begin(), status.end(), status.begin(), ::toupper);
+    transform(pekerjaan.begin(), pekerjaan.end(), pekerjaan.begin(), ::toupper);
+    transform(kewarganegaraan.begin(), kewarganegaraan.end(), kewarganegaraan.begin(), ::toupper);
+    
     cout << "\t\t PROVINSI ";
     cout << provinsi << endl;
     cout << "\t\t    KOTA ";
