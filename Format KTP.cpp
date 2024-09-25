@@ -4,70 +4,84 @@ TMJ 1B */
 
 #include <iostream>
 #include <string>
+#include <cctype> //buat toupper()
+#include <algorithm> //buat transform
 
 using namespace std;
+int main(){
 
-int main()
-{
     //Deklarasi
-    string nik, nama, tempat_tanggal, jenis_kelamin, gol_darah, alamat, rt_rw, kelurahan, kecamatan, agama, status, pekerjaan, kewarganegaraan;
+    string provinsi,kota, nik, nama, tempat_tanggal, jenis_kelamin, gol_darah, alamat, rt_rw, kelurahan, kecamatan, agama, status, pekerjaan, kewarganegaraan;
 
     //input
+    cout << "Masukkan Provinsi\t\t : ";
+    getline(cin, provinsi);
+    cout << "" << endl;
+
+    cout << "Masukkan Kota\t\t\t : ";
+    getline(cin, kota);
+    cout << "" << endl;
+
     cout << "Masukkan NIK\t\t\t : ";
     getline(cin, nik);
     cout << "" << endl;
 
-	cout << "Masukkan Nama\t\t\t : ";
+    cout << "Masukkan Nama\t\t\t : ";
     getline(cin, nama);
     cout << "" << endl;
 
     cout << "Masukkan Tempat Tanggal Lahir\t : ";
-    getline (cin, tempat_tanggal);
+    getline(cin, tempat_tanggal);
     cout << "" << endl;
 
     cout << "Masukkan Jenis Kelamin\t\t : ";
-    getline (cin, jenis_kelamin);
+    getline(cin, jenis_kelamin);
     cout << "" << endl;
 
     cout << "Masukkan Golongan Darah\t\t : ";
-    getline (cin, gol_darah);
+    getline(cin, gol_darah);
     cout << "" << endl;
 
     cout << "Masukkan Alamat\t\t\t : ";
-    getline (cin, alamat);
+    getline(cin, alamat);
     cout << "" << endl;
 
     cout << "Masukkan RT/RW\t\t\t : ";
-    getline (cin, rt_rw);
+    getline(cin, rt_rw);
     cout << "" << endl;
 
     cout << "Masukkan Kelurahan/Desa\t\t : ";
-    getline (cin, kelurahan);
+    getline(cin, kelurahan);
     cout << "" << endl;
 
     cout << "Masukkan Kecamatan\t\t : ";
-    getline (cin, kecamatan);
+    getline(cin, kecamatan);
     cout << "" << endl;
 
     cout << "Masukkan Agama\t\t\t : ";
-    getline (cin, agama);
+    getline(cin, agama);
     cout << "" << endl;
 
     cout << "Masukkan Status Perkawinan\t : ";
-    getline (cin, status);
+    getline(cin, status);
     cout << "" << endl;
-    
+
     cout << "Masukkan Pekerjaan\t\t : ";
-    getline (cin, pekerjaan);
+    getline(cin, pekerjaan);
     cout << "" << endl;
 
     cout << "Masukkan Kewarganegaraan\t : ";
-    getline (cin, kewarganegaraan);
+    getline(cin, kewarganegaraan);
     cout << "" << endl;
 
     //Proses & Output
-    cout << "\t\t PROVINSI DKI JAKARTA" << endl;
-    cout << "\t\t    JAKARTA BARAT" << endl; 
+    transform(provinsi.begin(), provinsi.end(), provinsi.begin(),::toupper); //Memperbesar str provinsi
+    transform(kota.begin(), kota.end(), kota.begin(), ::toupper); //Memperbesar str kota
+
+    cout << "\t\t PROVINSI ";
+    cout << provinsi << endl;
+    cout << "\t\t    KOTA ";
+    cout << kota;
     cout << "" << endl;
 
     cout << "NIK \t\t\t: ";
