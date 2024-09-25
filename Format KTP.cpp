@@ -2,9 +2,6 @@
 #include <string>
 
 using namespace std;
-// \t = buat ngetab
-// \\ = \
-// \" paok \" = buat kutipan " paok "
 
 int main()
 {
@@ -120,28 +117,6 @@ int main()
     cout << "" << endl;
 
     cout << "Berlaku Hingga \t\t: SEUMUR HIDUP ";
-
-    ////Deklarasi
-    //cout << "Menghitung Volume Tabung"<< endl;
-    //float tinggi, jarijari, tot_volume;
-    //float phi = 3.14;
-
-    ////Input 
-    //cout << "Masukkan tinggi : ";
-    // >> tinggi;
-    //cout << "" << endl;
-
-    //cout << "Masukkan jari-jari : ";
-    //cin >> jarijari;
-    //cout << "" << endl;
-
-    ////Proses
-    //tot_volume = tinggi * jarijari * jarijari * phi;
-
-    ////Output
-    //cout << "Hasilnya adalah = ";
-    //cout << tot_volume;
-    //cout << " CM";
     return 0;
 }
 
